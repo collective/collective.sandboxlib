@@ -7,11 +7,7 @@ from zope.i18nmessageid import MessageFactory
 
 _ = MessageFactory('collective.sandboxlib')
 
-allow_module('collective.sandboxlib')
-
-sandbox = ModuleSecurityInfo('collective.sandboxlib')
-
 # Whitelist pdf functions
-allow_module('collective.sandboxlib.pdf')
-pdf_api = ModuleSecurityInfo('collective.sandboxlib.pdf')
+allow_module('pretaweb.plomino2pdf.api')
+pdf_api = ModuleSecurityInfo('pretaweb.plomino2pdf.api')
 pdf_api.declarePublic('generate_pdf')
