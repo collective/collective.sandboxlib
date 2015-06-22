@@ -1,0 +1,5 @@
+====================
+collective.sandboxlib
+====================
+
+User documentation
